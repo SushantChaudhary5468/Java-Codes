@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Lec12 {
     public static void hollowRectangle(int rows, int columns) {
         for (int i = 1; i <= rows; i++) {
@@ -13,6 +15,16 @@ public class Lec12 {
     }
 
     public static void main(String args[]) {
-        hollowRectangle(6, 4);
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the number of rows: ");
+        int rows = sc.nextInt();
+        
+        System.out.print("Enter the number of columns: ");
+        int columns = sc.nextInt();
+        
+        hollowRectangle(rows, columns);
+        
+        sc.close();
     }
 }
