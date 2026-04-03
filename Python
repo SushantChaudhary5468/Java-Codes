@@ -1,0 +1,12 @@
+n=int(input("enter the value:"))
+temp=n
+sum=0
+while(temp>0):
+    remainder=temp%10
+    sum+=remainder*remainder*remainder
+    temp=temp//10                                  ** / → gives float (decimal)                                                   
+if(sum==n):                                        ** // → gives integer division   
+    print("Armstrong Number")
+
+else:
+    print("Not a armstrong number")
